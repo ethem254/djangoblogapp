@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+      <h3>Yazilim Bilimi Bloguna Hosgeldiniz...</h3>
+      <p>Bu blokta gelistiriciler olarak hayata gecirdiginiz projelerinizi paylasabilir fikir alis verisinde bulunabilirsiniz.</p>
+  </div>
+{% if numbers %}
+  {% for number in numbers  %}
+  <li>{{number}}</li>
+  {% endfor %}
+{% else %}
+  <p>number yok</p>
+{% endif %}
+
+
+
+{% endblock body %}
+
